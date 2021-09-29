@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>FormatoTexto._2._5</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>assets\setting_update_pencil_settings_edit_updates.ico</ApplicationIcon>
+  </PropertyGroup>
+
+</Project>
