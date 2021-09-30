@@ -20,37 +20,35 @@ namespace FormatoTexto._2._5
     /// </summary>
     public partial class MainWindow : Window
     {
-        //TextoAFormatearTextBox TextoFormateado
+        
         public MainWindow()
         {
             InitializeComponent();
         }
-
+        //Texto
+        private void TextoAFormatearTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            TextoFormateadoTextBlock.Text = TextoAFormatearTextBox.Text;
+        }
 
         //Estilos
         private void NegritaCheckBox_Checked(object sender, RoutedEventArgs e)
         {
-
-            TextoFormateadoTextBlock.Text = TextoAFormatearTextBox.Text;
             TextoFormateadoTextBlock.FontWeight = FontWeights.Bold;
-
         }
 
         private void NegritaCheckBox_Unchecked(object sender, RoutedEventArgs e)
         {
-            TextoFormateadoTextBlock.Text = TextoAFormatearTextBox.Text;
             TextoFormateadoTextBlock.FontWeight = FontWeights.Normal;
         }
 
         private void CursivaCheckBox_Checked(object sender, RoutedEventArgs e)
         {
-            TextoFormateadoTextBlock.Text = TextoAFormatearTextBox.Text;
             TextoFormateadoTextBlock.FontStyle = FontStyles.Italic;
         }
 
         private void CursivaCheckBox_Unchecked(object sender, RoutedEventArgs e)
         {
-            TextoFormateadoTextBlock.Text = TextoAFormatearTextBox.Text;
             TextoFormateadoTextBlock.FontStyle = FontStyles.Normal;
         }
 
@@ -58,25 +56,19 @@ namespace FormatoTexto._2._5
 
         private void ColorAzulRadioButton_Checked(object sender, RoutedEventArgs e)
         {
-            TextoFormateadoTextBlock.Text = TextoAFormatearTextBox.Text;
             TextoFormateadoTextBlock.Foreground = Brushes.Blue;
         }
 
         private void ColorRojoRadioButton_Checked(object sender, RoutedEventArgs e)
         {
-            TextoFormateadoTextBlock.Text = TextoAFormatearTextBox.Text;
             TextoFormateadoTextBlock.Foreground = Brushes.Red;
         }
 
         private void ColorVerdeRadioButton_Checked(object sender, RoutedEventArgs e)
         {
-            TextoFormateadoTextBlock.Text = TextoAFormatearTextBox.Text;
             TextoFormateadoTextBlock.Foreground = Brushes.Green;
         }
 
-        private void TextoAFormatearTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            TextoFormateadoTextBlock.Text = TextoAFormatearTextBox.Text;
-        }
+        
     }
 }
